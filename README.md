@@ -1,0 +1,1 @@
+# My first attemption for making Django-site
