@@ -7,12 +7,12 @@ menu = ['О сайте', 'Добавить статью', 'Обратная св
 
 
 def index(request):
-    posts = Patient.objects.all()
-    return render(request, 'patient/index.html', {'posts': posts, 'menu': menu, 'title': 'Главная страница'})
+    posts = Women.objects.all()
+    return render(request, 'women/index.html', {'posts': posts, 'menu': menu, 'title': 'Главная страница'})
 
 
 def about(request):
-    return render(request, 'patient/about.html', {'menu': menu, 'title': 'О сайте'})
+    return render(request, 'women/about.html', {'menu': menu, 'title': 'О сайте'})
 
 
 def categories(request, catid):

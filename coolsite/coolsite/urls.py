@@ -19,13 +19,13 @@ from django.contrib import admin
 from django.urls import path
 
 from coolsite import settings
-from patient.views import *
+from women.views import *
 from django.urls import path, include
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('patient.urls'))
+    path('', include('women.urls'))
 ]
 
 if settings.DEBUG:
